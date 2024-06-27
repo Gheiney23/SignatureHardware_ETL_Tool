@@ -231,7 +231,7 @@ try:
     final_df.to_excel('SH_Data.xlsx', sheet_name='SH_Data')
 
 except:
-    # Creating dataframes from the dict_list and mc_dict dictionaries
+    # Creating a dataframe from mc_dict dictionary
     mc_df = pd.DataFrame.from_dict(mc_dict, orient='index')
     mc_df = mc_df.transpose()
     mc_df.fillna('NULL')
